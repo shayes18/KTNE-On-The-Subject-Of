@@ -1,0 +1,69 @@
+/* CSS files add styling rules to your content */
+
+button {
+          padding: 10px;
+          margin: 5px;
+          font-size: large;
+        }
+        input[type="submit"]{
+            padding: 10px;
+            margin: 5px;
+        }
+        form{
+            border: 1px solid black;
+            width: 475px;
+            margin: 5px 10px 5px 10px;
+            padding: 5px;
+            font-size: large;
+        }
+        #redLabel{
+            color: white;
+            text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black;
+            padding: 1px;
+            background-color: red;
+        }
+        #blackLabel{
+            color: white;
+            text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black;
+            padding: 1px;
+            background-color: black;
+        }
+        #blueLabel{
+            color: white;
+            text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black;
+            padding: 1px;
+            background-color: blue;
+        }
+        #yellowLabel{
+            color: white;
+            text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black;
+            padding: 1px;
+            background-color: yellow;
+        }
+        #whiteLabel{
+            color: white;
+            text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black;
+            padding: 1px;
+            background-color: white;
+            border: .5px solid black;
+        }
