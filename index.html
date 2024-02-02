@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>KTNE - Wires</title>
+    <meta charset = "utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>On the Subject of Wires</h1><br>
+        <h3>Please input the number of wires</h3>
+    </header>
+    <div id="numberOfWires">
+        <button id="3wires" onclick="showForm(3)">3 Wires</button>
+        <button id="4wires" onclick="showForm(4)">4 Wires</button>
+        <button id="5wires" onclick="showForm(5)">5 Wires</button>
+        <button id="6wires" onclick="showForm(6)">6 Wires</button>
+    </div> <br>
+    <h3>Please input the colors in order</h3>
+    <div id="colors">
+        <form id="wireForm" style="display: none;" onsubmit="submitFunc()">
+            <fieldset id="wire1">
+            <b>Wire 1: </b> <input type="radio" id="black1" name="color" value="black">
+                <label for="black1" id="blackLabel">Black</label>
+            <input type="radio" id="blue1" name="color" value="blue">
+                <label for="blue1" id="blueLabel">Blue</label>
+            <input type="radio" id="red1" name="color" value="red">
+                <label for="red1" id="redLabel">Red</label>
+            <input type="radio" id="yellow1" name="color" value="yellow">
+                <label for="yellow1" id="yellowLabel">Yellow</label>
+            <input type="radio" id="white1" name="color" value="white">
+                <label for="white1" id="whiteLabel">White</label><br>
+            </fieldset>
+            <fieldset id="wire2">
+                <b>Wire 2:</b><input type="radio" id="black2" name="color2" value="black">
+                    <label for="black2" id="blackLabel2">Black</label>
+                <input type="radio" id="blue2" name="color2" value="blue">
+                    <label for="blue2" id="blueLabel2">Blue</label>
+                <input type="radio" id="red2" name="color2" value="red">
+                    <label for="red2" id="redLabel2">Red</label>
+                <input type="radio" id="yellow2" name="color2" value="yellow">
+                    <label for="yellow2" id="yellowLabel2">Yellow</label>
+                <input type="radio" id="white2" name="color2" value="white">
+                    <label for="white2" id="whiteLabel2">White</label><br>
+                </fieldset>
+                <fieldset id="wire3">
+                    <b>Wire 3:</b><input type="radio" id="black3" name="color3" value="black">
+                        <label for="black3" id="blackLabel3">Black</label>
+                    <input type="radio" id="blue3" name="color3" value="blue">
+                        <label for="blue3" id="blueLabel3">Blue</label>
+                    <input type="radio" id="red3" name="color3" value="red">
+                        <label for="red3" id="redLabel3">Red</label>
+                    <input type="radio" id="yellow3" name="color3" value="yellow">
+                        <label for="yellow3" id="yellowLabel3">Yellow</label>
+                    <input type="radio" id="white3" name="color3" value="white">
+                        <label for="white3" id="whiteLabel3">White</label><br>
+                </fieldset>
+                <fieldset id="wire4" style="display: none;">
+                    <b>Wire 4:</b><input type="radio" id="black4" name="color4" value="black">
+                        <label for="black4" id="blackLabel4">Black</label>
+                    <input type="radio" id="blue4" name="color4" value="blue">
+                        <label for="blue4" id="blueLabel4">Blue</label>
+                    <input type="radio" id="red4" name="color4" value="red">
+                        <label for="red4" id="redLabel4">Red</label>
+                    <input type="radio" id="yellow4" name="color4" value="yellow">
+                        <label for="yellow4" id="yellowLabel4">Yellow</label>
+                    <input type="radio" id="white4" name="color4" value="white">
+                        <label for="white4" id="whiteLabel4">White</label><br>
+                </fieldset>
+                <fieldset id="wire5" style="display: none;">
+                    <b>Wire 5:</b><input type="radio" id="black5" name="color5" value="black">
+                        <label for="black5" id="blackLabel5">Black</label>
+                    <input type="radio" id="blue5" name="color5" value="blue">
+                        <label for="blue5" id="blueLabel5">Blue</label>
+                    <input type="radio" id="red5" name="color5" value="red">
+                        <label for="red5" id="redLabel5">Red</label>
+                    <input type="radio" id="yellow5" name="color5" value="yellow">
+                        <label for="yellow5" id="yellowLabel5">Yellow</label>
+                    <input type="radio" id="white5" name="color5" value="white">
+                        <label for="white5" id="whiteLabel5">White</label><br>
+                </fieldset>
+                <fieldset id="wire6" style="display: none;">
+                    <b>Wire 6:</b><input type="radio" id="black6" name="color6" value="black">
+                        <label for="black6" id="blackLabel6">Black</label>
+                    <input type="radio" id="blue6" name="color6" value="blue">
+                        <label for="blue6" id="blueLabel6">Blue</label>
+                    <input type="radio" id="red6" name="color6" value="red">
+                        <label for="red6" id="redLabel6">Red</label>
+                    <input type="radio" id="yellow6" name="color6" value="yellow">
+                        <label for="yellow6" id="yellowLabel6">Yellow</label>
+                    <input type="radio" id="white6" name="color6" value="white">
+                        <label for="white6" id="whiteLabel6">White</label><br>
+                </fieldset>
+                <fieldset id="serialNum" style="display: none;">
+                    <b>Last Digit of Serial Number: </b><input type="radio" id="odd" name="serial" value="odd">
+                        <label for="odd" id="oddLabel">ODD</label>
+                    <input type="radio" id="even" name="serial" value="even">
+                        <label for="even" id="evenLabel">EVEN</label><br>
+                </fieldset>
+
+            <input type="submit" value="Submit">
+          </form> 
+    </div>
+    <div id="result"></div>
+</body>
+</html>
